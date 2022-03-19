@@ -1,6 +1,6 @@
 class Solver
   def factorial(num)
-    return raise StandardError, 'Canot find a factorial of a negative number' if num.negavtive?
+    return raise StandardError, 'Canot find a factorial of a negative number' if num.negative?
     return 1 if num.zero?
 
     num * factorial(num - 1)
